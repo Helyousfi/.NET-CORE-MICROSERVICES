@@ -52,9 +52,7 @@ namespace PlatformService.Controllers
             var platformModel = _mapper.Map<Platform>(platformCreateDto);
             _repository.CreatePlatform(platformModel);
             _repository.SaveChanges();
-
             var platformReadDto = _mapper.Map<PlatformReadDto>(platformModel);
-
             try
             {
                 await _commandDataClient.SendPlatformToCommand(platformReadDto);
