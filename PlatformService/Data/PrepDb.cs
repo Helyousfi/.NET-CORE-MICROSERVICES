@@ -13,7 +13,9 @@ namespace PlatformService.Data
         {
             using (var serviceScope = app.ApplicationServices.CreateScope())
             {
-                SeedData(serviceScope.ServiceProvider.GetService<AppDbContext>(), isProd);
+                var context = serviceScope.ServiceProvider.GetRequiredService<AppDbContext>(); // Ensure non-null context
+                SeedData(context, isProd);
+                //SeedData(serviceScope.ServiceProvider.GetService<AppDbContext>(), isProd);
             }
         }
 
