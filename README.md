@@ -8,6 +8,7 @@ This project demonstrates a microservices architecture built using .NET Core. It
 The services communicate via HTTP and support scalability and deployment using Kubernetes.
 # Project Architecture
 ## PlatformService
+![PlatformService Architecture](./platformSolutionArchi.png)
 ## CommandsService
 ![CommandsService Architecture](./commandServiceArchi.png)
 # Services
