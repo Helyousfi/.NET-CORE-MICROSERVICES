@@ -4,5 +4,5 @@ This repository contains two microservices, CommandsService and PlatformService,
 This project demonstrates a microservices architecture built using .NET Core. It consists of two services: <br />
 - CommandsService: Handles commands and related data. 
 - PlatformService: Manages platform-related data and synchronization.
-- 
+
 The services communicate via HTTP and support scalability and deployment using Kubernetes.
