@@ -12,7 +12,7 @@ The services communicate via HTTP and support scalability and deployment using K
 ## CommandsService
 ![CommandsService Architecture](./commandServiceArchi.png)
 # Services
-## CommandsService
+# CommandsService
 CommandsService is a .NET Core Web API responsible for managing commands.
 ## Structure
 - Controllers: Handles incoming HTTP requests.
